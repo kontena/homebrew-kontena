@@ -188,7 +188,7 @@ class Kontena < Formula
 
     env = { :GEM_PATH => libexec, :KONTENA_EXTRA_BUILDTAGS => "homebrew" }
 
-    if build.head?
+    if build.head? || build.devel?
       commit = Utils.popen_read("git", "rev-parse", "--short", "HEAD").chomp
       env[:KONTENA_EXTRA_BUILDTAGS].concat ",head-#{commit}"
     end
