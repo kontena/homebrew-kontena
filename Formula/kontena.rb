@@ -6,8 +6,12 @@ class Kontena < Formula
   stable do
     url "https://github.com/kontena/kontena.git",
         :tag => "v1.4.1",
-        :revision => "ec9a0dad29105bedd46838bf9092bf867b4b9922"  end
+        :revision => "ec9a0dad29105bedd46838bf9092bf867b4b9922"
 
+    resource "addressable" do
+      url "https://rubygems.org/gems/addressable-2.5.2.gem"
+      sha256 "73771ea960b3900d96e6b3729bd203e66f387d0717df83304411bf37efd7386e"
+    end
 
     resource "clamp" do
       url "https://rubygems.org/gems/clamp-1.1.2.gem"
@@ -32,6 +36,11 @@ class Kontena < Formula
     resource "hitimes" do
       url "https://rubygems.org/gems/hitimes-1.2.6.gem"
       sha256 "5939da5baf4bed890b481d77dc37d481297d0f06f1d2569f4c5c9a2112144218"
+    end
+
+    resource "kontena-plugin-cloud" do
+      url "https://rubygems.org/gems/kontena-plugin-cloud-1.2.0.gem"
+      sha256 "792132467e5c44e168dd679a49b68186da454f2509b79f3be8f3f6d341237ec1"
     end
 
     resource "kontena-websocket-client" do
@@ -60,13 +69,18 @@ class Kontena < Formula
     end
 
     resource "pastel" do
-      url "https://rubygems.org/gems/pastel-0.7.1.gem"
-      sha256 "6d7eefec10f7a36e625d304c9263f053ebc491d23942566e319a40e53469d955"
+      url "https://rubygems.org/gems/pastel-0.7.2.gem"
+      sha256 "e1d21dd8fb965e5052d1b16164a777fc450c6e187bf199f833a9de3f5303c3f9"
     end
 
     resource "public_suffix" do
-      url "https://rubygems.org/gems/public_suffix-3.0.0.gem"
-      sha256 "ae48d8122866e342c09f1f643c2b88e3547562fd6df85d83926445d75f90ca6a"
+      url "https://rubygems.org/gems/public_suffix-3.0.1.gem"
+      sha256 "67182699cb644e66b4c68d30b5f1dd42e3dfe6c0aa0d8fd36a1e71c97c6a7f57"
+    end
+
+    resource "rake" do
+      url "https://rubygems.org/gems/rake-10.5.0.gem"
+      sha256 "2b55a1ad44b5c945719d8a97c302a316af770b835187d12143e83069df5a8a49"
     end
 
     resource "retriable" do
@@ -105,13 +119,13 @@ class Kontena < Formula
     end
 
     resource "tty-screen" do
-      url "https://rubygems.org/gems/tty-screen-0.5.0.gem"
-      sha256 "c33a2d1d0b857cd37515a6db6fd5c6dd05e04f017b92753d3f31e54013bdb900"
+      url "https://rubygems.org/gems/tty-screen-0.6.3.gem"
+      sha256 "9bd1687dfdd8be829ce15b08032588078165746366c0778cbd05020f3e9f0215"
     end
 
     resource "tty-table" do
-      url "https://rubygems.org/gems/tty-table-0.8.0.gem"
-      sha256 "87d81d2d1780de5beb8c25848b027ddcdec7fb407d766aafde0c4f032ccf36c8"
+      url "https://rubygems.org/gems/tty-table-0.9.0.gem"
+      sha256 "03fd0edaf04395d124a58ae0c876a1a2d3ce1aec53e0763a581695cbde5477ee"
     end
 
     resource "unicode-display_width" do
@@ -134,23 +148,11 @@ class Kontena < Formula
       sha256 "b4a4e0c75eae9e85ceb248d4dc13519da581452767dcd5126c1452ea052183a4"
     end
 
-    resource "websocket-extensions" do
-      url "https://rubygems.org/gems/websocket-extensions-0.1.2.gem"
-      sha256 "7919c0310edda55ce4026d3f160e612160493c048276cabe500308439dd2161f"
-    end
-
     resource "wisper" do
       url "https://rubygems.org/gems/wisper-2.0.0.gem"
       sha256 "6d8623c76943612e8db81862af7eb20f5a8ad631fe1857d9f7ced97e87e5222b"
     end
-
-    resource "kontena-plugin-cloud" do
-      url "https://rubygems.org/gems/kontena-plugin-cloud-1.1.0.gem"
-      sha256 "87e88329c17c6aa6c49069fd6fa5f6577c451f73bb2bf264051b858af8ea57f1"
-    end
   end
-
-
 
   devel do
     url "https://github.com/kontena/kontena.git",
