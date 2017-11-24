@@ -56,7 +56,7 @@ To install a specific version, you must check out a tag for that version:
 ```
 cd $(brew --repo kontena/kontena)
 git checkout 1.4.1.rc1
-brew install --devel kontena
+brew install --devel kontena/kontena/kontena
 git checkout master
 ```
 
