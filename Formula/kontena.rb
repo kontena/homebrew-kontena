@@ -6,7 +6,7 @@ class Kontena < Formula
   stable do
     url "https://github.com/kontena/kontena.git",
         :tag => "v1.4.1",
-        :revision => "ec9a0dad29105bedd46838bf9092bf867b4b9922"
+        :revision => "f16f038781782d4c76720fb72a6df67b02441d9f"
 
     resource "addressable" do
       url "https://rubygems.org/gems/addressable-2.5.2.gem"
@@ -148,17 +148,15 @@ class Kontena < Formula
       sha256 "b4a4e0c75eae9e85ceb248d4dc13519da581452767dcd5126c1452ea052183a4"
     end
 
+    resource "websocket-extensions" do
+      url "https://rubygems.org/gems/websocket-extensions-0.1.3.gem"
+      sha256 "e0886634e49a5d0a790b43d49286af0f47b86636257843cb539e8ce64e6e9a0c"
+    end
+
     resource "wisper" do
       url "https://rubygems.org/gems/wisper-2.0.0.gem"
       sha256 "6d8623c76943612e8db81862af7eb20f5a8ad631fe1857d9f7ced97e87e5222b"
     end
-  end
-
-  devel do
-    url "https://github.com/kontena/kontena.git",
-        :tag => "v1.4.1.rc1",
-        :revision => "6ca90466bf41cd102fd522fbe4b0232d42732329"
-    version "1.4.1.rc1"
   end
 
   depends_on :ruby => "2.1"
