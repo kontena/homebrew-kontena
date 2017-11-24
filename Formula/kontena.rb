@@ -161,6 +161,12 @@ class Kontena < Formula
     sha256 "f0f44fde8847a0e94e9a3238d9cd8af92b2cf3a171401830ff569406b753789f" => :el_capitan
   end
 
+  devel do
+    url "https://github.com/kontena/kontena.git",
+        :tag => "v1.4.1.rc1",
+        :revision => "6ca90466bf41cd102fd522fbe4b0232d42732329"
+  end
+
   depends_on :ruby => "2.1"
 
   def install
