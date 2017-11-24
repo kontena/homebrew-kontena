@@ -165,6 +165,7 @@ class Kontena < Formula
     url "https://github.com/kontena/kontena.git",
         :tag => "v1.4.1.rc1",
         :revision => "6ca90466bf41cd102fd522fbe4b0232d42732329"
+    version "1.4.1.rc1"
   end
 
   depends_on :ruby => "2.1"
@@ -175,7 +176,7 @@ class Kontena < Formula
     cd "cli" do
       system "gem", "build", "--norc", "kontena-cli.gemspec"
 
-      if build.head?
+      if build.head? || build.devel?
         system "gem", "install", Dir["kontena-cli-*.gem"].first,
                "--no-document", "--norc", "--install-dir", libexec
       else
