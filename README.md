@@ -30,24 +30,12 @@ You can install Kontena CLI through this repository by using:
 brew install kontena/kontena/kontena
 ```
 
-Alternatively you can manually subscribe by using:
-
-```
-brew tap kontena/kontena
-```
-
-And then using:
-
-```
-brew install kontena
-```
-
 ### Development releases
 
 The latest development release can be installed by using:
 
 ```
-brew install --devel kontena
+brew install --devel kontena/kontena/kontena
 ```
 
 ### Bleeding edge version
@@ -59,7 +47,7 @@ branch of kontena:
 brew install --HEAD kontena
 ```
 
-This is also possiblefrom the homebrew-core without subscribing to this tap.
+This is also possible from the homebrew-core without subscribing to this tap.
 
 ### Previous versions
 
