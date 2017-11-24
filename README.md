@@ -1,7 +1,7 @@
 # Homebrew tap for Kontena
 
 This repository is a "[tap](https://github.com/Homebrew/brew/blob/master/docs/Taps.md)" for the popular macOS package manager [Homebrew](https://github.com/Homebrew/brew)
-and hosts formulae for the [Kontena](https://www.kontena.io/) command-line client.
+and hosts a formula for the [Kontena](https://www.kontena.io/) command-line client.
 
 Kontena CLI is also available in the main [homebrew-core](https://github.com/Homebrew/homebrew-core).
 This tap provides access to development versions and instant access to stable releases when released.
