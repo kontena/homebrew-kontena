@@ -3,6 +3,12 @@ class Kontena < Formula
   homepage "https://kontena.io/"
   head "https://github.com/kontena/kontena.git"
 
+  devel do
+    url "https://github.com/kontena/kontena.git",
+        :tag => "v1.4.2.rc1",
+        :revision => "c6e363902252493da3a617ab9feea5334ac2df00"
+  end
+
   stable do
     url "https://github.com/kontena/kontena.git",
         :tag => "v1.4.1",
