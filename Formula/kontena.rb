@@ -194,7 +194,7 @@ class Kontena < Formula
 
     if build.head? || build.devel?
       commit = Utils.popen_read("git", "rev-parse", "--short", "HEAD").chomp
-      env[:KONTENA_EXTRA_BUILDTAGS].concat ",head-#{commit}"
+      env[:KONTENA_EXTRA_BUILDTAGS].concat ",#{build.devel? ? 'devel' : 'head'}-#{commit}"
     end
 
     (bin/"kontena").write_env_script(libexec/"bin/kontena", env)
