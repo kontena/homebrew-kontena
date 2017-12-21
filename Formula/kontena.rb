@@ -5,8 +5,8 @@ class Kontena < Formula
 
   stable do
     url "https://github.com/kontena/kontena.git",
-        :tag => "v1.4.2",
-        :revision => "ead10ec4191a101769095b5fc7c3eeabaa05c621"
+        :tag => "v1.4.3",
+        :revision => "8e3842860578f9a8d8283d89d41a39fa4ed463d5"
 
     resource "addressable" do
       url "https://rubygems.org/gems/addressable-2.5.2.gem"
@@ -157,12 +157,6 @@ class Kontena < Formula
       url "https://rubygems.org/gems/wisper-2.0.0.gem"
       sha256 "6d8623c76943612e8db81862af7eb20f5a8ad631fe1857d9f7ced97e87e5222b"
     end
-  end
-
-  devel do
-    url "https://github.com/kontena/kontena.git",
-        :tag => "v1.4.3.rc1",
-        :revision => "6f218ba59889f1bbdf57b0f14b645b9fc1f48311"
   end
 
   depends_on :ruby => "2.1"
