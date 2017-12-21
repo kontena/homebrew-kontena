@@ -159,6 +159,12 @@ class Kontena < Formula
     end
   end
 
+  devel do
+    url "https://github.com/kontena/kontena.git",
+        :tag => "v1.4.3.rc1",
+        :revision => "6f218ba59889f1bbdf57b0f14b645b9fc1f48311"
+  end
+
   depends_on :ruby => "2.1"
 
   def install
