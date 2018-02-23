@@ -3,6 +3,12 @@ class Kontena < Formula
   homepage "https://kontena.io/"
   head "https://github.com/kontena/kontena.git"
 
+  devel do
+    url "https://github.com/kontena/kontena.git",
+        :tag => "v1.5.0.rc1",
+        :revision => "575c03f818f948f5b35fca97159f2315d712faf7"
+  end
+
   stable do
     url "https://github.com/kontena/kontena.git",
         :tag => "v1.4.3",
@@ -159,7 +165,7 @@ class Kontena < Formula
     end
   end
 
-  depends_on :ruby => "2.1"
+  depends_on :ruby => "2.2"
 
   def install
     ENV["GEM_HOME"] = libexec
